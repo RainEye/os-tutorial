@@ -60,3 +60,8 @@ I know you're anxious to try it out (I am!), so let's do it:
 You will see a window open which says "Booting from Hard Disk..." and
 nothing else. When was the last time you were so excited to see an infinite
 loop? ;-)
+
+$是该指令的位置，$$是程序起始位置，
+$-$$就是得到所有指令大小，
+512-($-$$)-2也就是510-($-$$)将程序用0填充到510字节，
+最后两个字节应该写db 55,AA总共512字节的引导程序。
